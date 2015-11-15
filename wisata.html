@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+<script src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<link rel="stylesheet" href="css/jqm-demos.css">	
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+        document.addEventListener("deviceready", onDeviceReady, false);     
+        function onDeviceReady() {      
+        } 
+function doClose() {
+		navigator.notification.confirm(
+			'Keluar dari Aplikasi ?',
+			exitApp,
+			'Wisata Ciamis',
+			'Ok,Cancel'
+		);
+	}	
+	function exitApp(buttonIndex) {
+			if (buttonIndex == 1) {
+			navigator.app.exitApp();
+			}
+		else {
+			window.close();
+		}
+	}
+</script>
+		 
+	
+
+
+</head>
+ <body class="ui-mobile-viewport ui-overlay-a">
+    <div data-role="page" id="home" class="jqm-demos jqm-home" style="background-image:url('images/bg.png'); background-attachment: fixed; background-size: cover;"  >																																																						
+	 <div data-role="header"  >
+     <p style="white-space: normal;color:#fff;font-size:12px;font-weight:50px;margin: 0 5em 0 5em;text-align: center;"  role="heading" class="ui-title">Objek Wisata dan Penginapan Kabupaten Ciamis</p>	    
+	  <a  href="home.html" data-icon="back" data-ajax="false" data-iconpos="notext">Search</a>
+	  
+	 </div>  
+     <div role="main"  align="center"  >		 
+     <ul data-role="listview" data-inset="false" data-theme="b"  data-inset="true">
+     <li><a data-ajax="false" href="keterangan.html?id=0" >
+     <img src="images/1.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Situ Lengkong</p>
+	 <p style="white-space: normal;font-size:10px">Desa / Kecamatan Panjalu </p>
+     </a>
+     </li>
+	 <li><a href="keterangan.html?id=1" data-ajax="false" >
+     <img src="images/2.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Curug Tujuh</p>
+	 <p style="white-space: normal;font-size:10px">Desa Sandingtaman Kecamatan Panjalu</p>
+     </a>
+     </li>
+	 <li><a href="keterangan.html?id=2" data-ajax="false" >
+     <img src="images/3.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Cagar Budaya Astana Gede</p>
+	 <p style="white-space: normal;font-size:10px">Desa/Kecamatan Kawali</p>
+     </a>
+     </li>
+	 <li><a href="keterangan.html?id=3" data-ajax="false" >
+     <img src="images/4.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Cagar Budaya Karangkamulyan</p>
+	 <p style="white-space: normal;font-size:10px">Desa Karangkamulyan Kecamatan Cijeungjing</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=4" data-ajax="false" >
+     <img src="images/5.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Situ Mustika</p>
+	 <p style="white-space: normal;font-size:10px">Desa Karangpaningal Kecamatan Purwaharja</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=5" data-ajax="false" >
+     <img src="images/6.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Gua Donan</p>
+	 <p style="white-space: normal;font-size:10px">Desa Tunggilis Kecamatan Kalipucang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=6" data-ajax="false" >
+     <img src="images/7.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Karang Nini</p>
+	 <p style="white-space: normal;font-size:10px">Desa Emplak, Kecamatan Kalipucang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=7" data-ajax="false" >
+     <img src="images/8.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Indah pangandaran</p>
+	 <p style="white-space: normal;font-size:10px">Desa Pananjung Kecamatan Pangandaran</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=8" data-ajax="false" >
+     <img src="images/9.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Cagar Alam pananjung</p>
+	 <p style="white-space: normal;font-size:10px">Desa Pangandaran Kecamatan Pangandaran Kabupaten Ciamis</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=9" data-ajax="false" >
+     <img src="images/10.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Karang Tirta</p>
+	 <p style="white-space: normal;font-size:10px">Desa Sukaresik Kecamatan Pangandaran</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=10" data-ajax="false" >
+     <img src="images/11.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai batu Hiu</p>
+	 <p style="white-space: normal;font-size:10px">Desa Ciliang Kecamatan Parigi</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=11" data-ajax="false" >
+     <img src="images/12.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai batu karas</p>
+	 <p style="white-space: normal;font-size:10px">Desa Batukaras, Kecamatan Cijulang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=12" data-ajax="false" >
+     <img src="images/13.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Keusik Luhur</p>
+	 <p style="white-space: normal;font-size:10px">Desa Kertamukti Kecamatan Cimerak</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=13" data-ajax="false" >
+     <img src="images/14.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Cukang Taneuh (Green Canyon)</p>
+	 <p style="white-space: normal;font-size:10px">Desa Kertayasa Kecamatan Cijulang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=14" data-ajax="false" >
+     <img src="images/15.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pemandian Alam Citumang</p>
+	 <p style="white-space: normal;font-size:10px">Desa Bojong Kecamatan Parigi</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=15" data-ajax="false" >
+     <img src="images/16.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Karapyak</p>
+	 <p style="white-space: normal;font-size:10px">Desa Bagolo Kecamatan Kalipucang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=16" data-ajax="false" >
+     <img src="images/17.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Palatar Agung</p>
+	 <p style="white-space: normal;font-size:10px">Desa Bagolo</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=17" data-ajax="false" >
+     <img src="images/18.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Majingklak</p>
+	 <p style="white-space: normal;font-size:10px">Desa Pamotan Kecamatan Kalipucan</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=18" data-ajax="false" >
+     <img src="images/19.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Madasari</p>
+	 <p style="white-space: normal;font-size:10px">Desa Masawah Kecamatan Cimerak</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=19" data-ajax="false" >
+     <img src="images/20.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Lapangan terbang Nusawiru</p>
+	 <p style="white-space: normal;font-size:10px">Desa Kondangjajar Kecamatan Cijulang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=20" data-ajax="false" >
+     <img src="images/21.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Lembah Putri</p>
+	 <p style="white-space: normal;font-size:10px">Desa Ciputrapinggan</p>
+     </a></li>
+     
+	 
+	 </ul>
+	
+	 
+</div>	
+
+
+
+</div>	
+</body>
+</html>

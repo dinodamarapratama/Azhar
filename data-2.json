@@ -1,0 +1,79 @@
+var data = [
+  {
+    "nama": "Badeto Ratu",
+    "alamat": "Jl. Pantai Barat Pangandaran",
+    "latitude": -7.684454,
+    "longitude": 108.63975,
+    "telepon": "0265639024"
+  },
+  {
+    "nama": "Wismawan",
+    "alamat": "Jl. Pantai Timur Pangandaran",
+    "latitude": -7.703167,
+    "longitude": 108.658429,
+    "telepon": "0265639376"
+  },
+  {
+    "nama": "Pangandaran Beach",
+    "alamat": "Jl. Pantai Barat Pangandaran",
+    "latitude": -7.699764,
+    "longitude": 108.65613,
+    "telepon": "0265639062"
+  },
+  {
+    "nama": "Sawargi",
+    "alamat": "Jl. Pantai Barat Pangandaran",
+    "latitude": -7.681222,
+    "longitude": 108.637075,
+    "telepon": "0265639042"
+  },
+  {
+    "nama": "Saputra",
+    "alamat": "Jl. Pantai Barat Pangandaran",
+    "latitude": -7.682072,
+    "longitude": 108.638277,
+    "telepon": "0265639040"
+  },
+  {
+    "nama": "Aquarium",
+    "alamat": "Jl. Pantai Barat Pangandaran",
+    "latitude": -7.697893,
+    "longitude": 108.655958,
+    "telepon": "0265639088"
+  },
+  {
+    "nama": "Kembar Mas",
+    "alamat": "Jl. Pantai Barat Pangandaran",
+    "latitude": -7.690068,
+    "longitude": 108.656816,
+    "telepon": "0265630663"
+  },
+  {
+    "nama": "Nyiur Indah I",
+    "alamat": "Jl. Pantai Barat Pangandaran",
+    "latitude": -7.700275,
+    "longitude": 108.656645,
+    "telepon": "0265639053"
+  },
+  {
+    "nama": "Laut Biru",
+    "alamat": "Jl. Kidang Pananjung Pangandaran",
+    "latitude": -7.697042,
+    "longitude": 108.656816,
+    "telepon": "0265639017"
+  },
+  {
+    "nama": "Sandaan",
+    "alamat": "Jl. Pantai Barat Pangandaran",
+    "latitude": -7.621165,
+    "longitude": 108.651581,
+    "telepon": "0265639165"
+  },
+  {
+    "nama": "Pantai Uni",
+    "alamat": "Jl. Pantai Barat Pangandaran",
+    "latitude": -7.629331,
+    "longitude": 108.654327,
+    "telepon": "0265639224"
+  }
+];

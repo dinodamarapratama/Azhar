@@ -3,21 +3,13 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Aplikasi Informasi Universitas Gunadarma</title>
-
+<title></title>
 <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
 <script src="js/jquery-1.10.2.min.js"></script>
-<script>
-  /*
-$(document).bind('mobileinit',function(){
-    $.mobile.changePage.defaults.changeHash = false;
-    $.mobile.hashListeningEnabled = false;
-    $.mobile.pushStateEnabled = false;
-});		*/
-</script>
-<link rel="stylesheet" type="text/css" href="css/one.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="js/jquery.mobile-1.4.2.min.js"></script>
-<link rel="stylesheet" href="css/jqm-demos.css">	
+<link rel="stylesheet" href="css/jqm-demos.css">
+	
 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
 		 <script type="text/javascript" charset="utf-8">
         document.addEventListener("deviceready", onDeviceReady, false);     
@@ -27,7 +19,7 @@ function doClose() {
 		navigator.notification.confirm(
 			'Keluar dari Aplikasi ?',
 			exitApp,
-			'Aplikasi UG',
+			'Wisata Ciamis',
 			'Ok,Cancel'
 		);
 	}	
@@ -40,7 +32,8 @@ function doClose() {
 		}
 	}
         </script>
-		  <script type="text/javascript" charset="utf-8">
+		 
+		 <script type="text/javascript" charset="utf-8">
 
         // Wait for Cordova to load
         //
@@ -129,36 +122,213 @@ function doClose() {
 
 
 </head>
- <body onload="playAudio('/android_asset/www/audio/musik.mp3');" class="ui-mobile-viewport ui-overlay-a">
+ <body onload="playAudio('/android_asset/www/audio/music.mp3');" class="ui-mobile-viewport ui-overlay-a">
     <div data-role="page" id="home" class="jqm-demos jqm-home" style="background-image:url('images/bg.png'); background-attachment: fixed; background-size: cover;"  >																																																						
-	 <div data-role="header" class="jqm-header"   >
-	 <div>
-		<h2 style="white-space: normal;" aria-level="1" role="heading" class="ui-title"><img width="10px" src="images/H.png"   > 
-		</h2>
-		<h2 aria-level="1" style="white-space: normal;"  role="heading" class="ui-title">Aplikasi Informasi Universitas Gunadarma </h2>
-</div>       
-    </div>  
-<div role="main" data-theme="c"  class="ui-content jqm-content" align="center"  >
-
-<a href="regional.html" data-ajax="false" class="ui-btn ui-shadow">DAFTAR KAMPUS</a>
-<a href="Tentang.html" data-ajax="false" class="ui-btn ui-shadow">TENTANG</a>
-<a href="Bantuan.html" data-ajax="false" class="ui-btn ui-shadow">BANTUAN</a>
-<a data-ajax="false"  onclick="doClose()" class="ui-btn ui-shadow">KELUAR</a>
-<br>
-<form>
-    <fieldset data-role="controlgroup" data-theme="b" data-type="horizontal" data-mini="true">
-        <legend>Mars UG :</legend>
-        <input onclick="playAudio('/android_asset/www/audio/musik.mp3');" type="radio" name="radio-choice-t-6" id="radio-choice-t-6a" value="on" checked="checked">
-        <label for="radio-choice-t-6a">Play</label>
-        <input onclick="stopAudio()" type="radio" name="radio-choice-t-6" id="radio-choice-t-6b" value="off">
-        <label for="radio-choice-t-6b">Stop</label>
-    </fieldset>
-</form>	
+	 <div data-role="header"  >
+     <p style="white-space: normal;color:#fff;font-size:12px;font-weight:50px;margin: 0 5em 0 5em;text-align: center;"  role="heading" class="ui-title">Objek Wisata dan Penginapan Kabupaten Ciamis</p>	    
+	  <a data-icon="search" href="#nav-panel" data-ajax="false" data-iconpos="notext">Search</a>
+	  <a data-icon="info" href="#popupDialog" data-rel="popup" data-transition="pop" data-iconpos="notext">About</a>
+	 </div>  
+     <div role="main" data-theme="c"  class="ui-content jqm-content" align="center"  >		 
+    
+	 <div class="ui-grid-a ui-responsive">
+	    <div class="ui-block-a">
+		<img width="30%" onclick="window.location.href='wisata.html'" src="images/icon-1.png"   alt=""/>
+	    </div> 
+		<br>
+		<div class="ui-block-b">
+		<img width="30%" onclick="window.location.href='penginapan.html'" src="images/icon-2.png"   alt=""/>
+	    </div> 
+		  
+	</div>
+	 
 </div>	
-	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="jqm-footer">
-		<p>Aplikasi Informasi Universitas Gunadarma 1.0 <span class="jqm-version"></span></p>
-		<p>Copyright 2015 Azhar Setiawan</p>
-	</div><!-- /footer -->	
-	</div>	
+<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+    <h1>Tentang</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">Aplikasi Wisata Ciamis</h3>
+        <p>Temukan kemudahan menjelajah dan bermalam di kabupaten Ciamis dengan aplikasi ini</p>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Cancel</a>
+       
+    </div>
+</div>
+<div data-role="panel" data-position-fixed="true" data-display="reveal" id="nav-panel">
+		
+<form class="ui-filterable">
+<input id="inset-autocomplete-input" placeholder="Pencarian..." data-type="search">
+</form>
+<ul data-role="listview" data-input="#inset-autocomplete-input" data-filter-reveal="true" data-filter="true" data-inset="true">
+    <li><a data-ajax="false" href="keterangan.html?id=0" >
+     <img src="images/1.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Situ Lengkong</p>
+	 <p style="white-space: normal;font-size:10px">Desa / Kecamatan Panjalu </p>
+     </a>
+     </li>
+	 <li><a href="keterangan.html?id=1" data-ajax="false" >
+     <img src="images/2.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Curug Tujuh</p>
+	 <p style="white-space: normal;font-size:10px">Desa Sandingtaman Kecamatan Panjalu</p>
+     </a>
+     </li>
+	 <li><a href="keterangan.html?id=2" data-ajax="false" >
+     <img src="images/3.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Cagar Budaya Astana Gede</p>
+	 <p style="white-space: normal;font-size:10px">Desa/Kecamatan Kawali</p>
+     </a>
+     </li>
+	 <li><a href="keterangan.html?id=3" data-ajax="false" >
+     <img src="images/4.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Cagar Budaya Karangkamulyan</p>
+	 <p style="white-space: normal;font-size:10px">Desa Karangkamulyan Kecamatan Cijeungjing</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=4" data-ajax="false" >
+     <img src="images/5.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Situ Mustika</p>
+	 <p style="white-space: normal;font-size:10px">Desa Karangpaningal Kecamatan Purwaharja</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=5" data-ajax="false" >
+     <img src="images/6.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Gua Donan</p>
+	 <p style="white-space: normal;font-size:10px">Desa Tunggilis Kecamatan Kalipucang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=6" data-ajax="false" >
+     <img src="images/7.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Karang Nini</p>
+	 <p style="white-space: normal;font-size:10px">Desa Emplak, Kecamatan Kalipucang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=7" data-ajax="false" >
+     <img src="images/8.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Indah pangandaran</p>
+	 <p style="white-space: normal;font-size:10px">Desa Pananjung Kecamatan Pangandaran</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=8" data-ajax="false" >
+     <img src="images/9.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Cagar Alam pananjung</p>
+	 <p style="white-space: normal;font-size:10px">Desa Pangandaran Kecamatan Pangandaran Kabupaten Ciamis</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=9" data-ajax="false" >
+     <img src="images/10.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Karang Tirta</p>
+	 <p style="white-space: normal;font-size:10px">Desa Sukaresik Kecamatan Pangandaran</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=10" data-ajax="false" >
+     <img src="images/11.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai batu Hiu</p>
+	 <p style="white-space: normal;font-size:10px">Desa Ciliang Kecamatan Parigi</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=11" data-ajax="false" >
+     <img src="images/12.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai batu karas</p>
+	 <p style="white-space: normal;font-size:10px">Desa Batukaras, Kecamatan Cijulang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=12" data-ajax="false" >
+     <img src="images/13.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Keusik Luhur</p>
+	 <p style="white-space: normal;font-size:10px">Desa Kertamukti Kecamatan Cimerak</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=13" data-ajax="false" >
+     <img src="images/14.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Cukang Taneuh (Green Canyon)</p>
+	 <p style="white-space: normal;font-size:10px">Desa Kertayasa Kecamatan Cijulang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=14" data-ajax="false" >
+     <img src="images/15.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pemandian Alam Citumang</p>
+	 <p style="white-space: normal;font-size:10px">Desa Bojong Kecamatan Parigi</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=15" data-ajax="false" >
+     <img src="images/16.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Karapyak</p>
+	 <p style="white-space: normal;font-size:10px">Desa Bagolo Kecamatan Kalipucang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=16" data-ajax="false" >
+     <img src="images/17.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Palatar Agung</p>
+	 <p style="white-space: normal;font-size:10px">Desa Bagolo</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=17" data-ajax="false" >
+     <img src="images/18.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Majingklak</p>
+	 <p style="white-space: normal;font-size:10px">Desa Pamotan Kecamatan Kalipucan</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=18" data-ajax="false" >
+     <img src="images/19.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Madasari</p>
+	 <p style="white-space: normal;font-size:10px">Desa Masawah Kecamatan Cimerak</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=19" data-ajax="false" >
+     <img src="images/20.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Lapangan terbang Nusawiru</p>
+	 <p style="white-space: normal;font-size:10px">Desa Kondangjajar Kecamatan Cijulang</p>
+     </a></li>
+	 <li><a href="keterangan.html?id=20" data-ajax="false" >
+     <img src="images/21.jpg"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Lembah Putri</p>
+	 <p style="white-space: normal;font-size:10px">Desa Ciputrapinggan</p>
+     </a></li>
+	 <li><a data-ajax="false" href="keterangan_2.html?id=0" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Badeto Ratu</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Pantai Barat Pangandaran</p>
+     </a>
+     </li>
+	 <li><a href="keterangan_2.html?id=1" data-ajax="false" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Wismawan</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Pantai Timur Pangandaran</p>
+     </a>
+     </li>
+	 <li><a href="keterangan_2.html?id=2" data-ajax="false" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pangandaran Beach</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Pantai Barat Pangandaran</p>
+     </a>
+     </li>
+	 <li><a href="keterangan_2.html?id=3" data-ajax="false" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Sawargi</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Pantai Barat Pangandaran</p>
+     </a> </li>
+	 <li><a href="keterangan_2.html?id=4" data-ajax="false" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Saputra</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Pantai Barat Pangandaran</p>
+     </a> </li>
+	 <li><a href="keterangan_2.html?id=5" data-ajax="false" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Aquarium</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Pantai Barat Pangandaran</p>
+     </a> </li>
+	 <li><a href="keterangan_2.html?id=6" data-ajax="false" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Kembar Mas</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Pantai Barat Pangandaran</p>
+     </a> </li>
+	 <li><a href="keterangan_2.html?id=7" data-ajax="false" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Nyiur Indah I</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Pantai Barat Pangandaran</p>
+     </a> </li>
+	 <li><a href="keterangan_2.html?id=8" data-ajax="false" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Laut Biru</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Kidang Pananjung Pangandaran</p>
+     </a> </li>
+	 <li><a href="keterangan_2.html?id=9" data-ajax="false" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Sandaan</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Pantai Barat Pangandaran</p>
+     </a> </li>
+	 <li><a href="keterangan_2.html?id=10" data-ajax="false" >
+     <img src="images/icon-3.png"   alt=""/>
+     <p style="white-space: normal;font-weight:bold">Pantai Uni</p>
+	 <p style="white-space: normal;font-size:10px">Jl. Pantai Barat Pangandaran</p>
+     </a> </li>
+</ul>
+</div>
+
+</div>	
 </body>
 </html>

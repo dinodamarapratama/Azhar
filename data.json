@@ -1,0 +1,149 @@
+var data = [
+  {
+    "nama": "Situ Lengkong",
+    "alamat": "Desa/Kecamatan Panjalu",
+    "latitude": -7.12704,
+    "longitude": 108.273253,
+    "keterangan": "Situ Lengkong Panjalu merupakan perpaduan antara objek wisata alam dan objek wisata budaya. Di objek wisata ini kita bisa menyaksikan indahnya danau (situ) yang berhawa sejuk dengan sebuah pulau terdapat di tengahnya yang disebut Nusa Larang. Di nusa ini terdapat Makam Hariang Kencana, putra dari Hariang Borosngora, Raja Panjalu yang membuat Situ Lengkong pada masa beliau menjadi raja kerajaan Panjalu. Untuk menghormati jasa para leluhur Panjalu, maka sampai saat ini warga keturunan Panjalu biasa melaksanakan semacam upacara adat yang disebut Nyangku. Acara ini dilaksanakan pada tiap-tiap bulan Maulud dengan cara membersihkan benda-benda pusaka yang disimpan di sebuah tempat khusus (semacam musium) yang disebut Bumi Alit. Kegiatan wisata yang bisa dilaksanakan di sini antara lain: berperahu mengelilingi nusa, memancing, camping, dan sebagainya.,"
+  },
+  {
+    "nama": "Curug Tujuh",
+    "alamat": "Desa Sandingtaman Kecamatan Panjalu",
+    "latitude": -7.12704,
+    "longitude": 108.273253,
+    "keterangan": "Objek wisata ini mempunyai 7 (tujuh) buah air terjun (curug) yang terdapat pada sebuah bukit di kaki Gunung Sawal. Kita dapat menikmati keindahan dan keasrian ketujuh air terjun tersebut dengan cara mengitari bukit, menapaki jalan setapak mulai dari kaki bukit sampai ke puncak bukit dan kembali lagi. Terletak di Desa Sandingtaman Kecamatan Panjalu, lebih kurang 35 km arah utara kota Ciamis.,"
+  },
+  {
+    "nama": "Cagar Budaya Astana Gede",
+    "alamat": "Desa/Kecamatan Kawali",
+    "latitude": -7.348528,
+    "longitude": 108.491504,
+    "keterangan": "Terletak di Desa/Kecamatan Kawali, kurang lebih 21 km arah utara kota Ciamis. Di sini terdapat beberapa buah Batu Bertulis (Prasasti) yang merupakan cikal bakal bukti keberadaan kerajaan Sunda yang dibuat pada masa pemerintahan Prabu Niskala Wastu Kencana. Salah satu dari batu bertulis tersebut bertuliskan Mahayunan Ayunan Kadatuan yang dijadikan sebagai motto juang kabupaten Ciamis. Selain batu-batu prasasti terdapat pula peninggalan lainnya berupa:\\n1.Seperangkat batu disolit, yakni batu tempat pelantikan raja yang disebut Palangka.\\n2.\tBatu telapak kaki dan tangan dengan garis retak-retak menggambarkan kekuasaan dan penanggalan (kalender).\\n3.\tTiga buah batu menhir: a. Batu Panyandaan, b. Batu Panyandangan, c. Batu Pamuruyan (alat untuk bercermin).,"
+  },
+  {
+    "nama": "Cagar Budaya Karangkamulyan",
+    "alamat": "Desa Karangkamulyan Kecamatan Cijeungjing",
+    "latitude": -7.333056,
+    "longitude": 108.425274,
+    "keterangan": "Cagar Budaya ini merupakan peninggalan pusat Kerajaan Galuh Pusaka yang dikukuhkan oleh Sanghyang Parmanadikusumah. Di situs ini kita bisa melihat tempat-tempat bekas peninggalan dari legenda Ciung Wanara, salah seorang putera Sanghyang Permanadikusumah. Peninggalan-peninggalan tersebut antara lain:\\n1.\tBatu Pangcalikan ialah bekas singgasana dan tempat bermusyawarah Raja.\\n2.\tPenyambungan Ayam, tempat Ciung Wanara menyabung ayam dengan Bondan Sarati.\\n3.\tSanghyang Bedil.\\n4.\tLambang Peribadatan.\\n5.\tSumber Air Citeguh dan Cirahayu.\\n6.\tMakam Adipati Panaekan.\\n7.\tPamangkonan.\\n8.\tBatu Panyandaan.\\n9.\tPatimuan.\\n10.\tLeuwi Sipatahunan tempat bayi Ciung Wanara dibuang di Sungai Citanduy.\\nTerletak di Desa Karangkamulyan Kecamatan Cijeungjing, lebih kurang 16 km dari kota Ciamis ke arah Timur, dengan fasilitas. Lapangan Parkir, Kios-kios makanan, Rest Area.,"
+  },
+  {
+    "nama": "Situ Mustika",
+    "alamat": "Desa Karangpaningal Kecamatan Purwaharja",
+    "latitude": -7.416006,
+    "longitude": 108.671865,
+    "keterangan": "Objek wisata ini merupakan situ buatan yang pada awalnya berfungsi sebagai penampung air pada kawasan hutan jati seluas � 3 hektar. Terletak di Desa Karangpaningal Kecamatan Purwaharja, tepatnya sebelah kiri jalan propinsi menuju kota Banjar, lebih kurang 24 km arah timur kota Ciamis.,"
+  },
+  {
+    "nama": "Gua Donan",
+    "alamat": "Desa Tunggilis Kecamatan Kalipucang",
+    "latitude": -7.681477,
+    "longitude": 108.73229,
+    "keterangan": "Merupakan gua alam dengan luas areal � 2,5 hektar. Memiliki panjang sekita 500 meter, dengan keunikan yang jarang terdapat di gua-gua lain. Di dalamnya terdapat lorong/ruangan luas yang berisi batu karang yang mirip binatang purba, kursi kerajaan serta dihiasi stalaknit dan stalaktit.,"
+  },
+  {
+    "nama": "Pantai Karang Nini",
+    "alamat": "Desa Emplak, Kecamatan Kalipucang",
+    "latitude": -7.697829,
+    "longitude": 108.658347,
+    "keterangan": "Tempat ini merupakan perpaduan antara Hutan dan Pantai Samudra Indonesia yang mempunyai pemandangan yang indah dengan hamparan hutan jati yang luas dan rimba yang masih alami.\\nDisebut Karang Nini karena masyarakat sekitar percaya bahwa tempat ini merupakan simbol cinta dan kesetiaan sejati antara kakek (aki dalam bahasa Sunda) dan nenek (nini dalam bahasa Sunda), konon pada saat itu si Aki pergi ke laut untuk memancing hingga akhirnya tidak pernah kembali lagi, lalu si Nini meminta dan memohon kepada Ratu Pantai Selatan untuk di pertemukan dengan sang kekasih hatinya itu, tak lama kemudian munculah sebuah karang yang mengambang sebagai perwujudan jasad Si Aki, batu karang tersebut dinamakan Bale Kambang yang apabila setiap orang yang berdiri di atas nya akan merasa bergoyang. Setelah itu Si Nini lalu bersemedi dan meminta agar selalu berdekatan dengan Si Aki tak lama kemudian dikabulkanlah permintaannya dan menjelmalah Si Nini menjadi sebuah Karang yang tepat menghadap kearah Bale Kambang.\\nObyek wisata Karang Nini juga menyediakan menara pandang yang terletak diatas bukit di tujukan bagi para pengunjung yang ingin melihat pemandangan yang luas dan indah dari atas. Selain itu dikawasan Karang Nini juga terdapat obyek wisata lain seperti Mata Air Sumur Tujuh yang dipercaya dapat membuat awet muda dan Aquarium alam di muara Cipangbokongan yang sangat menarik disaat air laut surut, para pengunjung dapat melihat berbagai jenis ikan hias yang terjebak di relung - relung terumbu.,"
+  },
+  {
+    "nama": "Pantai Indah pangandaran",
+    "alamat": "Desa Pananjung Kecamatan Pangandaran",
+    "latitude": -7.674799,
+    "longitude": 108.647704,
+    "keterangan": "Objek wisata yang merupakan primadona pantai di Jawa Barat ini terletak di Desa Pananjung Kecamatan Pangandaran dengan jarak � 92 km arah selatan kota Ciamis, memiliki berbagai keistimewaan seperti:\\n1.Dari pantai Pangandaran ini kita bisa melihat terbit dan tenggelamnya matahari dari tempat yang sama.\\n2.Pantainya landai dengan air yang jernih serta jarak antara pasang dan surut relatif lama sehingga memungkinkan kita untuk berenang dengan aman\\n3.erdapat pantai dengan hamparan pasir putih\\4. Tersedia tim penyelamat wisata pantai.\\nwisatawan yang datang di Pangandaran dapat melakukan kegiatan yang beraneka ragam: berenang, berperahu pesiar, memancing, keliling dengan sepeda, para sailing, jet ski dan lain-lain.\\nAdapun acara tradisional yang terdapat di sini adalah Hajat Laut, yakni upacara yang dilakukan nelayan di Pangandaran sebagai perwujudan rasa terima kasih mereka terhadap kemurahan Tuhan YME dengan cara melarung sesajen ke laut lepas. Acara ini biasa dilaksanakan pada tiap-tiap bulan Muharam, dengan mengambil tempat di Pantai Timur Pangandaran.\\nEvent pariwisata bertaraf internasional yang selalu dilaksanakan di sini adalah Festival Layang-layang Internasional (Pangandaran International Kite Festival) dengan berbagai kegiatan pendukungnya yang bisa kita saksikan pada tiap bulan Juni atau Juli.,"
+  },
+  {
+    "nama": "Cagar Alam pananjung",
+    "alamat": "Desa Pangandaran Kecamatan Pangandaran Kabupaten Ciamis",
+    "latitude": -7.683901,
+    "longitude": 108.580534,
+    "keterangan": "Cagar Alam Pananjung merupakan bagian dari laut Jawa selatan yang mempunyai pemandangan yang indah dengan area yang sangat luas, memiliki berbagai macam flora dan fauna langka, dan didalamnya terdapat gua alam dan gua buatan yang memiliki nilai sejarah yang tinggi.\\nDari kultur sejarahnya dinamakan Pananjung karena kawasan taman wisata alam ini terletak pada sebuah tanjung yang menghubungkan daratan ke laut lepas. Kawasan Obyek wisata alam ini pada mulanya merupakan salah satu pusat kerajaan Galuh Pangaoban yang berpusat di Putra Pinggan sekitar abad 14 M dengan rajanya yang bernama Prabu Angga Larang, namun kerajaan ini tidak bertahan lama karena di serang oleh bajak laut karena pihak kerajaan tidak mau menjual hasil bumi nya kepada bajak laut.\\nDi dalam kawasan obyek wisata alam Pananjung terdapat beberapa gua yang memiliki keindahan tersendiri, seperti gua Jepang yang memiliki panjang sekitar 4m ini merupakan gua buntu yang memiliki lorong untuk tembus ke atas gua dan berfungsi sebagai tempat untuk mengelabui tentara sekutu disaat penyergapan terhadap tentara jepang di daerah ini. Selain itu ada juga gua yang berbentuk seperti terowongan yang berfungsi untuk membuang bangkai rusa yang dimakan oleh anjing dan merupakan gua tempat tinggal Biawak, Selain itu dikawasan cagar alam ini juga terdapat situs yang bernama Batu Kalde atau Sapi Gumarang sebagai simbol dari sapi tunggangan para dewa yang merupakan tempat beribadah umat Hindu dimasa kerajaan Pananjung dan terdapat beberapa reruntuhan candi dan makam pembesar kerajaan Pananjung.,"
+  },
+  {
+    "nama": "Pantai Karang Tirta",
+    "alamat": "Desa Sukaresik Kecamatan Pangandaran",
+    "latitude": -7.686091,
+    "longitude": 108.535185,
+    "keterangan": "Objek wisata ini lebih menyediakan pengalaman rekreasi anda untuk menikmati keindahan alamnya juga bisa untuk melakukan rekreasi berupa bersampan, memancing dan berkemah. Dan di Karang Tirta ini kerap sekali digunakan sebagai lokasi syuting film-film laga indonesia. Fasilitas yang disediakan terdapat kedai makanan dan minuman serta pondok-pondok wisata.,"
+  },
+  {
+    "nama": "Pantai batu Hiu",
+    "alamat": "Desa Ciliang Kecamatan Parigi",
+    "latitude": -7.750049164,
+    "longitude": 108.5023257,
+    "keterangan": "Memiliki panorama alam yang sangat indah. Dari atas bukit kecil yang ditumbuhi pohon-pohon Pandan Wong, kita menyaksikan birunya Samudra Indonesia dengan deburan ombaknya yang menggulung putih. Sekitar 200 meter dari pinggir pantai terdapat seonggok batu karang yang menyerupai ikan hiu, karena itulah tempat ini dinamakan Batu Hiu.\\nAnda tidak dapat berenang karena ombaknya yang cukup besar, Anda masih bisa berjalan-jalan di pantai menikmati simbahan busa butih yang datang bersama debur ombak Batuhiu.,"
+  },
+  {
+    "nama": "Pantai batu karas",
+    "alamat": "Desa Batukaras, Kecamatan Cijulang",
+    "latitude": -7.813385,
+    "longitude": 108.372738,
+    "keterangan": "Objek wisata yang satu ini merupakan perpaduan nuansa alam antara objek wisata Pangandaran dan Batu Hiu dengan suasana alam yang tenang, gelombang laut yang bersahabat dengan pantainya yang landai membuat pengunjung kerasan tinggal di kawasan ini. ,"
+  },
+  {
+    "nama": "Pantai Keusik Luhur",
+    "alamat": "Desa Kertamukti Kecamatan Cimerak",
+    "latitude": -7.717434,
+    "longitude": 108.445272,
+    "keterangan": "Merupakan perpaduan antara alam pegunungan dengan panorama pantai. Dari sebuah bukit kita bisa menyaksikan bergeloranya samudra Indonesia dengan gelombang laut selatan menghempas karang, sehingga buih-buih putih birunya laut lepas. Gelombang laut mengangkat pasir ke atas batu karang yang terjal sehingga orang menamakannya Keusikluhur (keusik = pasir, luhur = tinggi).,"
+  },
+  {
+    "nama": "Cukang Taneuh (Green Canyon)",
+    "alamat": "Desa Kertayasa Kecamatan Cijulang",
+    "latitude": -7.647281,
+    "longitude": 108.537025,
+    "keterangan": "Green Canyon nama aslinya adalah Cukang Taneuh, terletak di Desa Kertayasa Kecamatan Cijulang, � 31 km dari Pangandaran.\\nObjek wisata ini merupakan aliran sungai Cijulang yang menembus gua dengan stalaktif dan stalaknit yang mempesona serta diapit oleh dua bukit dengan bebatuan dan rimbunnya pepohonan menyajikan atraksi alam yang yang khas dan menantang.\\nDi mulut gua terdapat air terjun Palatar sehingga suasana di objek wisata ini terasa begitu sejuk. Kegiatan yang dapat dilakukan diantaranya panjat tebing (rock climbing), berenang, bersampan sambil memancing.\\nUntuk mencapai lokasi ini wisatawan dapat menggunakan perahu yang banyak tersedia di Dermaga Ciseureuh, baik perahu tempel maupun perahu kayuh. Objek wisata ini berdekatan degan objek wisata Batukaras serta Lapangan Terbang Nusawiru.,"
+  },
+  {
+    "nama": "Pemandian Alam Citumang",
+    "alamat": "Desa Bojong Kecamatan Parigi",
+    "latitude": -7.685645,
+    "longitude": 108.760271,
+    "keterangan": "Objek wisata ini memiliki keunikan tersendiri, dimana aliran sungai Citumang yang airnya sangat jernih menerobos gua-gua karang sehingga pengunjung bisa melakukan kegiatan berenang di air terjun, menelusuri hutan yang di dalamnya banyak terdapat gua-gua.,"
+  },
+  {
+    "nama": "Pantai Karapyak",
+    "alamat": "Desa Bagolo Kecamatan Kalipucang",
+    "latitude": -7.692173,
+    "longitude": 108.75407,
+    "keterangan": "Keadaan alam yang masih perawan memungkinkan kita untuk bersantai sambil melakukan kegiatan rekreasi seperti memancing, berkemah dan menikmati keindahan alam sambil berburu ikan-ikan kecil serta keong laut.,"
+  },
+  {
+    "nama": "Pantai Palatar Agung",
+    "alamat": "Desa Bagolo",
+    "latitude": -7.292512,
+    "longitude": 108.662832,
+    "keterangan": "Di objek wisata yang berlatar belakang Pulau Nusakambangan ini, pengunjung dapat melakukan kegiatan seperti: memancing, berkemah, berperahu pesiar serta melihat kegiatan nelayan tradisional dengan berbagai aktivitasnya.,"
+  },
+  {
+    "nama": "Majingklak",
+    "alamat": "Desa Pamotan Kecamatan Kalipucan",
+    "latitude": -7.776389,
+    "longitude": 108.500556,
+    "keterangan": "Tempat ini merupakan Dermaga Kapal Fery atau Kapal Pesiar menuju Pelabuhan Cilacap dan diharapkan menjadi sarana penunjang bagi pembangunan di wilayah Ciamis Selatan. Terdapat beberapa kegiatan yang dapat dilakukan antara lain: memancing, berwisata perahu, menyaksikan ikan pesut yang banyak terdapat di perairan ini.,"
+  },
+  {
+    "nama": "Pantai Madasari",
+    "alamat": "Desa Masawah Kecamatan Cimerak",
+    "latitude": -7.723984,
+    "longitude": 108.489733,
+    "keterangan": "Pantai ini menyajikan panorama alam yang spesifik dimana Pantai Madasari dengan pulau-pulau kecilnya berpadu dengan hijaunya datadan Masawah, dihiasi pula oleh batu-batu karang sepanjang pantai yang landai.,"
+  },
+  {
+    "nama": "Lapangan terbang Nusawiru",
+    "alamat": "Desa Kondangjajar Kecamatan Cijulang",
+    "latitude": 0,
+    "longitude": 0,
+    "keterangan": "Lapangan terbang ini selain berfungsi untuk sektor pariwisata juga mempunyai nilai lebih bagi perkembangan pembangunan di berbagai sektor seperti: perikanan, pertanian, perhubungan serta kegiatan olahraga kedirgantaraan. Dengan run away sepanjang 1.400 x 30 meter, bandara ini laik didarati oleh pesawat sejenis CN-235.,"
+  },
+  {
+    "nama": "Pantai Lembah Putri",
+    "alamat": "Desa Ciputrapinggan",
+    "latitude": 0,
+    "longitude": 0,
+    "keterangan": "Pantai Lembah Putri menawarkan untuk Anda panorama alam yang sangat indah. Dari ketinggian bukit yang ada, Anda dapat melihat pesona hamparan lautan yang sangat luas dengan gelora ombak Samudra Indonesia yang datang tanpa henti. Hal menarik lainnya mencakup tembok mirip miniatur tembok cina yang dibangun di atas perbukitan Lembah Putri, beberapa goa alam yang menarik, panorama perbukitan yang hijau, dan patahan batu-batuan dari bukit sekitar pantai yang semakin menambah keindahan pemandangan alam di daerah pantai ini secara keseluruhan. Di sini Anda dapat melakukan berbagai kegiatan olah raga seperti gantole, memancing, dan berkemah."
+  }
+] ;

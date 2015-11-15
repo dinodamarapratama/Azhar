@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.2.min.css">
+<script src="js/jquery-1.10.2.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.mobile-1.4.2.min.js"></script>
+<link rel="stylesheet" href="css/jqm-demos.css">	
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script type="text/javascript" charset="utf-8">
+        document.addEventListener("deviceready", onDeviceReady, false);     
+        function onDeviceReady() {      
+        } 
+function doClose() {
+		navigator.notification.confirm(
+			'Keluar dari Aplikasi ?',
+			exitApp,
+			'Wisata Ciamis',
+			'Ok,Cancel'
+		);
+	}	
+	function exitApp(buttonIndex) {
+			if (buttonIndex == 1) {
+			navigator.app.exitApp();
+			}
+		else {
+			window.close();
+		}
+	}
+</script>
+<script type="text/javascript" src="data-2.json"></script>		 
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+<script>
+
+var num_id = "";
+
+$( document ).ready(function() {
+ var vars = {}, hash;
+ var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+ for(var i = 0; i < hashes.length; i++)
+ {
+ hash = hashes[i].split('='); 
+ vars[hash[0]] = hash[1];
+ num_id = hash[1];
+ 
+ }
+});
+
+
+
+
+function initialize()
+{
+var myCenter=new google.maps.LatLng(data[num_id].latitude,data[num_id].longitude);
+var nama = data[num_id].nama ;
+document.getElementById('nama').innerHTML = data[num_id].nama;
+document.getElementById('alamat').innerHTML = data[num_id].alamat;
+var telp =  document.getElementById('telp') ;
+telp.innerHTML = data[num_id].telepon;
+telp.onclick=function(){window.open('tel:' + data[num_id].telepon, '_system')};
+document.getElementById('pic').src = "images/icon-3.png";
+
+var mapProp = {
+  center:myCenter,  
+  zoom:15,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker=new google.maps.Marker({
+  position:myCenter,  
+  });
+marker.setMap(map);
+var infowindow = new google.maps.InfoWindow({
+  content:nama
+  });
+infowindow.open(map,marker);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>	
+
+
+</head>
+ <body class="ui-mobile-viewport ui-overlay-a">
+    <div data-role="page" id="home" class="jqm-demos jqm-home" style="background-image:url('images/bg.png'); background-attachment: fixed; background-size: cover;"  >																																																						
+	 <div data-role="header"  >
+     <p style="white-space: normal;color:#fff;font-size:12px;font-weight:50px;margin: 0 5em 0 5em;text-align: center;"  role="heading" class="ui-title">Objek Wisata dan Penginapan Kabupaten Ciamis</p>	    
+	  <a  href="wisata.html" data-icon="back" data-ajax="false" data-iconpos="notext">Search</a>
+	 </div>  
+     <div role="main"  align="center"  >
+	 <h3 id="nama"></h3>   
+	 <br>
+     <img width="90%"  src="" id="pic"   alt=""/>
+     <br>
+     <p id="alamat"></p>	 
+     <div data-role="collapsible-set">
+        <div data-role="collapsible" data-collapsed="true">
+        <h3>Nomor Telepon </h3>     
+		<a class="ui-btn ui-btn-b ui-shadow" id="telp" href="#" >Phone</a>
+      </div>
+      <div data-role="collapsible" data-collapsed="false">
+        <h3>Peta</h3>
+        <div id="googleMap" style="width:100%;height:300px"></div>
+      </div>       
+    </div> 
+  </div>
+</div>	
+
+
+
+</div>	
+</body>
+</html>
